@@ -74,6 +74,21 @@ bool HieuRand2so() //Random 2 số, nhập 1 số và so sánh số và kết qu
 bool TongRand2so() //Random 2 số, nhập 1 số và so sánh số và kết quả a+b
 {
 	bool kq;
+	srand(time(NULL));
+	int a = rand() % (100 - 0 + 1);
+	int b = rand() % (100 - 0 + 1);
+	int tong = a + b;
+	cout << "Nhap 1 so: ";
+	cin >> ket;
+	if (tong == ket)
+	{
+		kq = true;
+	}
+	else
+	{
+		kq = false;
+	}
+
 
 	return kq;
 }
