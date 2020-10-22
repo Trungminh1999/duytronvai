@@ -130,13 +130,13 @@ int main() {
 		cout << "a / b = " << PhepChia(a, b);
 		break;
 	case 5:
-		
+		cout<<"Chu vi và diện tích hinh chữ nhật: "<< TinhChuViDienTichHinhChuNhat(a,b);
 		break;
 	case 6:
-		
+		cout<<"Chu vi và diện tích hinh vuông : "<< TinhChuViDienTichVuong(a);
 		break;
 	case 7:
-		
+		cout<<"Chu vi và diện tích hinh tròn : "<< TinhChuViDienTichHinhTron(a);
 		break;
 	case 8:
 		
