@@ -25,17 +25,40 @@ int PhepChia(int a, int b)
 //-------------Bài 2---- tính chu vi, diện tích hình tròn, chữ nhật, vuông
 void TinhChuViDienTichHinhChuNhat(int a, int b)
 {
-	
+	int a,b;
+    cout << "-----------Tinh DT HCN----------\n";
+	cout <<"nhap chieu rong  ";
+	cin>>a;
+	cout<<"nhap chieu dai  ";
+	cin>>b;
+    cout << "Dien tich hcn : " << a*b;
+	cout<< "Chu vi hcn:"<<<(a+b)*b;
+    return 0;
 }
 
 void TinhChuViDienTichVuong(int a)
 {
+	int a;
+    cout << "-----------Tinh DT HV----------\n";
+	cout <<"nhap chieu canh  ";
+	cin>>a;
+    cout << "Dien tich hcn : " << a*a;
+	cout<< "Chu vi hcn:"<<<a*4;
+    return 0;
+	
 	
 }
 
 void TinhChuViDienTichHinhTron(int a)
 {
-	
+	int a;
+    cout << " -----------Tinh DT HT---------- ";
+    float r;
+    cout << "nhap vao ban kinh r = " ;
+    cin >> r;
+    cout << "dien tic hinh tron la : " << r*r*3.14;
+	cout<<"chu vi hinh tron la :"<<r*2*3.14;
+	return 0;
 }
 
 
