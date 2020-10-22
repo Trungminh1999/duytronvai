@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 //-------------Bài 1---- cộng trừ nhân chia 2 số
@@ -39,7 +41,21 @@ void TinhChuViDienTichHinhTron(int a)
 bool HieuRand2so() //Random 2 số, nhập 1 số và so sánh số và kết quả a-b
 {
 	bool kq;
-
+	srand(time(NULL));
+	int a = rand() % (100 - 0 + 1);
+	int b = rand() % (100 - 0 + 1);
+	int hieu = a - b;
+	int kqn;
+	cout << "Hiệu của " << a << " và " << b << "là = ? ";
+	cin >> kqn;
+	if (hieu == kqn)
+	{
+		kq = true;
+	}
+	else
+	{
+		kq = false;
+	}
 	return kq;
 }
 
@@ -100,7 +116,10 @@ int main() {
 		
 		break;
 	case 9:
-		
+		if (HieuRand2so()==true)
+			cout << "\nKết quả bạn nhập là ĐÚNG!!" << endl;
+		else
+		cout << "\nKết quả bạn nhập là SAI!!"<<endl;
 		break;
 	default:
 		break;
