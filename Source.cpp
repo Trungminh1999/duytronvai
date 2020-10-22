@@ -115,13 +115,13 @@ int main() {
 		cout << "a / b = " << PhepChia(a, b);
 		break;
 	case 5:
-		
+		TinhChuViDienTichHinhChuNhat(a, b)
 		break;
 	case 6:
-		
+		TinhChuViDienTichVuong(a)
 		break;
 	case 7:
-		
+		TinhChuViDienTichHinhTron(a)
 		break;
 	case 8:
 		
