@@ -1,21 +1,25 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 //-------------Bài 1---- cộng trừ nhân chia 2 số
 int PhepCong(int a, int b)
 {
+	return a+b;
 }
 
 int PhepTru(int a, int b)
 {
+	return a-b;
 }
 
 int PhepNhan(int a, int b)
 {
+	return a*b;
 }
 
 int PhepChia(int a, int b)
 {
+	return a/b;
 }
 
 //-------------Bài 2---- tính chu vi, diện tích hình tròn, chữ nhật, vuông
