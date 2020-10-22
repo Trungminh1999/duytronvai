@@ -1,39 +1,70 @@
+<<<<<<< HEAD
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+=======
+﻿#include <iostream>
+>>>>>>> 4e2df5b74d654bb0395710152dfde239ac395c95
 using namespace std;
 
 //-------------Bài 1---- cộng trừ nhân chia 2 số
 int PhepCong(int a, int b)
 {
+	return a+b;
 }
 
 int PhepTru(int a, int b)
 {
+	return a-b;
 }
 
 int PhepNhan(int a, int b)
 {
+	return a*b;
 }
 
 int PhepChia(int a, int b)
 {
+	return a/b;
 }
 
 //-------------Bài 2---- tính chu vi, diện tích hình tròn, chữ nhật, vuông
 void TinhChuViDienTichHinhChuNhat(int a, int b)
 {
-	
+	int a,b;
+    cout << "-----------Tinh DT HCN----------\n";
+	cout <<"nhap chieu rong  ";
+	cin>>a;
+	cout<<"nhap chieu dai  ";
+	cin>>b;
+    cout << "Dien tich hcn : " << a*b;
+	cout<< "Chu vi hcn:"<<<(a+b)*b;
+    return 0;
 }
 
 void TinhChuViDienTichVuong(int a)
 {
+	int a;
+    cout << "-----------Tinh DT HV----------\n";
+	cout <<"nhap chieu canh  ";
+	cin>>a;
+    cout << "Dien tich hcn : " << a*a;
+	cout<< "Chu vi hcn:"<<<a*4;
+    return 0;
+	
 	
 }
 
 void TinhChuViDienTichHinhTron(int a)
 {
-	
+	int a;
+    cout << " -----------Tinh DT HT---------- ";
+    float r;
+    cout << "nhap vao ban kinh r = " ;
+    cin >> r;
+    cout << "dien tic hinh tron la : " << r*r*3.14;
+	cout<<"chu vi hinh tron la :"<<r*2*3.14;
+	return 0;
 }
 
 
@@ -63,6 +94,21 @@ bool HieuRand2so() //Random 2 số, nhập 1 số và so sánh số và kết qu
 bool TongRand2so() //Random 2 số, nhập 1 số và so sánh số và kết quả a+b
 {
 	bool kq;
+	srand(time(NULL));
+	int a = rand() % (100 - 0 + 1);
+	int b = rand() % (100 - 0 + 1);
+	int tong = a + b;
+	cout << "Nhap 1 so: ";
+	cin >> ket;
+	if (tong == ket)
+	{
+		kq = true;
+	}
+	else
+	{
+		kq = false;
+	}
+
 
 	return kq;
 }
