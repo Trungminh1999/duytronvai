@@ -48,12 +48,12 @@ bool HieuRand2so() //Random 2 số, nhập 1 số và so sánh số và kết qu
 }
 
 //-------------Bài 4----
-bool TongRand2so() //Random 2 số, nhập 1 số và so sánh số và kết quả a+b
+bool TongRand2so(int a,int b) //Random 2 số, nhập 1 số và so sánh số và kết quả a+b
 {
 	bool kq;
 	srand(time(NULL));
-	int a = rand() % (100 - 0 + 1);
-	int b = rand() % (100 - 0 + 1);
+	a = rand() % (100 - 0 + 1);
+	b = rand() % (100 - 0 + 1);
 	int tong = a + b;
 	cout << "Nhap 1 so: ";
 	cin >> ket;
@@ -116,7 +116,7 @@ int main() {
 		
 		break;
 	case 8:
-		
+		TongRand2so(a, b);
 		break;
 	case 9:
 		
