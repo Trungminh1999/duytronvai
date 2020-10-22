@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+=======
 ﻿#include <iostream>
+>>>>>>> 4e2df5b74d654bb0395710152dfde239ac395c95
 using namespace std;
 
 //-------------Bài 1---- cộng trừ nhân chia 2 số
@@ -66,17 +72,31 @@ void TinhChuViDienTichHinhTron(int a)
 bool HieuRand2so() //Random 2 số, nhập 1 số và so sánh số và kết quả a-b
 {
 	bool kq;
-
+	srand(time(NULL));
+	int a = rand() % (100 - 0 + 1);
+	int b = rand() % (100 - 0 + 1);
+	int hieu = a - b;
+	int kqn;
+	cout << "Hiệu của " << a << " và " << b << "là = ? ";
+	cin >> kqn;
+	if (hieu == kqn)
+	{
+		kq = true;
+	}
+	else
+	{
+		kq = false;
+	}
 	return kq;
 }
 
 //-------------Bài 4----
-bool TongRand2so() //Random 2 số, nhập 1 số và so sánh số và kết quả a+b
+bool TongRand2so(int a,int b) //Random 2 số, nhập 1 số và so sánh số và kết quả a+b
 {
 	bool kq;
 	srand(time(NULL));
-	int a = rand() % (100 - 0 + 1);
-	int b = rand() % (100 - 0 + 1);
+	a = rand() % (100 - 0 + 1);
+	b = rand() % (100 - 0 + 1);
 	int tong = a + b;
 	cout << "Nhap 1 so: ";
 	cin >> ket;
@@ -149,10 +169,13 @@ int main() {
 >>>>>>> duy
 		break;
 	case 8:
-		
+		TongRand2so(a, b);
 		break;
 	case 9:
-		
+		if (HieuRand2so()==true)
+			cout << "\nKết quả bạn nhập là ĐÚNG!!" << endl;
+		else
+		cout << "\nKết quả bạn nhập là SAI!!"<<endl;
 		break;
 	default:
 		break;
